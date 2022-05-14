@@ -37,12 +37,23 @@ private val panicAttack = listOf(
         Pair("resStrain", 3), Pair("expRelax", 3),
         Pair("resStrain", 3), Pair("expRelax", 3),
     )
+    private val angry = listOf(
+        Pair("resNose", 4), Pair("stop", 2),
+        Pair("expNose", 4), Pair("stop", 2),
+        Pair("resNose", 4), Pair("stop", 2),
+        Pair("expNose", 4), Pair("stop", 2),
+        Pair("resNose", 4), Pair("stop", 2),
+        Pair("expNose", 4), Pair("stop", 2),
+        Pair("resNose", 4), Pair("stop", 2),
+        Pair("expNose", 4), Pair("stop", 2)
+    )
 
     private val emotionMap = mapOf(
         "panicAttack" to panicAttack,
         "worried" to worried,
         "sleepy" to sleepy,
-        "stress" to stress
+        "stress" to stress,
+        "angry" to angry
     )
     val text = mapOf(
         "resNose" to "Вдохните через нос",
@@ -50,7 +61,8 @@ private val panicAttack = listOf(
         "expLip" to "Выдохните через рот",
         "expStark" to "Резко выдохните",
         "resStrain" to "Вхохните и напрягитесь",
-        "expRelax" to "Выдохните и расслабтесь"
+        "expRelax" to "Выдохните и расслабтесь",
+        "stop" to "Задержите дыхание"
     )
 
     fun printText(emotion: String, text1: TextView): Unit {
