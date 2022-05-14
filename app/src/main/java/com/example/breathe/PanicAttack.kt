@@ -5,7 +5,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import logic.printText
+
 
 
 class PanicAttack : AppCompatActivity() {
@@ -16,9 +16,37 @@ class PanicAttack : AppCompatActivity() {
         val back = findViewById<Button>(R.id.buttonBack)
         val start = findViewById<Button>(R.id.buttonStart)
         val text = findViewById<TextView>(R.id.text)
-        start.setOnClickListener {
-            printText("panicAttack", text)
+        var i = 0
+        val motion = listOf<Pair<String, Long>>(
+            Pair("Вдохните через нос", 4000), Pair("Выдохните через нос", 4000),
+            Pair("Вдохните через нос", 4000), Pair("Выдохните через нос", 4000),
+            Pair("Вдохните через нос", 6000), Pair("Выдохните через нос", 6000),
+            Pair("Вдохните через нос", 6000), Pair("Выдохните через нос", 6000),
+            Pair("Вдохните через нос", 8000), Pair("Выдохните через нос", 8000),
+            Pair("Вдохните через нос", 8000), Pair("Выдохните через нос", 8000)
+        )
+
+        val thread: Thread = object : Thread() {
+            override fun run() {
+                try {
+                    while (!this.isInterrupted) {
+                        runOnUiThread {
+                            text.text = motion[i].first
+                        }
+                        sleep(motion[i].second)
+                        i++
+                    }
+                } catch (e: InterruptedException) {
+                }
+            }
         }
+
+        start.setOnClickListener {
+            thread.start()
+
+        }
+
+
 
         back.setOnClickListener {
             startActivity(
