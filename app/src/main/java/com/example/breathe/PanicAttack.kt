@@ -1,17 +1,12 @@
 package com.example.breathe
 
-import android.annotation.SuppressLint
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
-import com.google.android.material.snackbar.Snackbar
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.navigateUp
-import androidx.navigation.ui.setupActionBarWithNavController
-import com.example.breathe.databinding.ActivityPanicAttackBinding
-import logic.LogicBreathe
+import logic.printText
+
 
 class PanicAttack : AppCompatActivity() {
 
@@ -20,9 +15,9 @@ class PanicAttack : AppCompatActivity() {
         setContentView(R.layout.activity_panic_attack)
         val back = findViewById<Button>(R.id.buttonBack)
         val start = findViewById<Button>(R.id.buttonStart)
-
+        val text = findViewById<TextView>(R.id.text)
         start.setOnClickListener {
-            LogicBreathe.printText("panicAttack")
+            printText("panicAttack", text)
         }
 
         back.setOnClickListener {

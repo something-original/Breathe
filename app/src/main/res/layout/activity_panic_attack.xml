@@ -15,8 +15,10 @@
         android:layout_gravity="center_horizontal"
         android:fontFamily="@font/dancing_script"
         android:gravity="center"
-        android:text="less stress2"
+        android:text="less stress"
         android:textSize="50sp" />
+
+
 
     <ImageView
         android:layout_width="500sp"
@@ -27,6 +29,17 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="@font/dancing_script"
+            android:gravity="center"
+            android:text=""
+            android:textSize="50sp" />
+
         <Button
             android:id="@+id/buttonBack"
             android:layout_width="300dp"

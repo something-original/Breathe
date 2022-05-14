@@ -1,20 +1,18 @@
 package logic
 
-import android.content.Intent
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
-import android.widget.Button
-
 import android.os.SystemClock
+import android.widget.TextView
+import com.example.breathe.PanicAttack
+import com.example.breathe.R
 
-class LogicBreathe {
-    private val panicAttack = listOf(
+
+private val panicAttack = listOf(
         Pair("resNose", 4), Pair("expNose", 4),
         Pair("resNose", 4), Pair("expNose", 4),
         Pair("resNose", 6), Pair("expNose", 6),
         Pair("resNose", 6), Pair("expNose", 6),
-        Pair("resNose", 6), Pair("expNose", 6),
-        Pair("resNose", 6), Pair("expNose", 6)
+        Pair("resNose", 8), Pair("expNose", 8),
+        Pair("resNose", 8), Pair("expNose", 8)
     )
     private val worried = listOf(
         Pair("resNose", 4), Pair("expLip", 4),
@@ -55,14 +53,11 @@ class LogicBreathe {
         "expRelax" to "Выдохните и расслабтесь"
     )
 
-    fun printText(emotion: String): Unit {
-
-        //переход на другой layout
+    fun printText(emotion: String, text1: TextView): Unit {
 
         val motions = emotionMap[emotion]!!
         for (pair in motions) {
-            //вывод текста text[pair.first]!!
-
+            text1.setText(text[pair.first])
             val delay = (pair.second * 1000).toLong()
             SystemClock.sleep(delay)
         }
@@ -73,7 +68,7 @@ class LogicBreathe {
     private fun stop(): Unit {
         //псевдонажатие на конпку СТОП и возврат на слой с выором эмоции
     }
-}
+
 
 
 
