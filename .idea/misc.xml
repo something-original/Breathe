@@ -3,6 +3,11 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/NotWhat/StudioProjects/Breathe/app/src/main/res/layout/activity_angry.xml" value="0.3378623188405797" />
+        <entry key="..\:/Users/NotWhat/StudioProjects/Breathe/app/src/main/res/layout/activity_panic_attack.xml" value="0.3378623188405797" />
+        <entry key="..\:/Users/NotWhat/StudioProjects/Breathe/app/src/main/res/layout/activity_sleepy.xml" value="0.3378623188405797" />
+        <entry key="..\:/Users/NotWhat/StudioProjects/Breathe/app/src/main/res/layout/activity_stressed.xml" value="0.3378623188405797" />
+        <entry key="..\:/Users/NotWhat/StudioProjects/Breathe/app/src/main/res/layout/activity_worried.xml" value="0.3378623188405797" />
         <entry key="..\:/Users/coolg/AndroidStudioProjects/Breathe/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.1385" />
         <entry key="..\:/Users/coolg/AndroidStudioProjects/Breathe/app/src/main/res/drawable/ic_launcher_background.xml" value="0.1385" />
         <entry key="..\:/Users/coolg/AndroidStudioProjects/Breathe/app/src/main/res/layout/activity_angry.xml" value="0.16145833333333334" />
