@@ -73,13 +73,13 @@
             app:fontFamily="@font/pt_sans_bold" />
 
         <Button
-            android:id="@+id/buttonStop"
+            android:id="@+id/buttonAngry"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:background="?android:attr/selectableItemBackground"
             android:letterSpacing="-0.0005"
-            android:text="Стоп"
-            android:textAllCaps="true"
+            android:text="Гнев"
+            android:textAllCaps="false"
             android:textSize="10pt"
             app:fontFamily="@font/pt_sans_bold" />
     </LinearLayout>
