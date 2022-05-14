@@ -27,58 +27,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="vertical">
+
         <Button
-            android:id="@+id/buttonPanicAttack"
+            android:id="@+id/buttonBack"
             android:layout_width="300dp"
             android:layout_height="wrap_content"
             android:background="?android:attr/selectableItemBackground"
             android:letterSpacing="-0.0005"
-            android:text="Паническая атака"
-            android:textAllCaps="false"
-            android:textSize="10pt"
-            app:fontFamily="@font/pt_sans_bold" />
-
-        <Button
-            android:id="@+id/buttonWorried"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:background="?android:attr/selectableItemBackground"
-            android:text="Волнение"
-            android:textAllCaps="false"
-            android:textSize="10pt"
-            android:letterSpacing="-0.0005"
-            app:fontFamily="@font/pt_sans_bold" />
-
-        <Button
-            android:id="@+id/buttonSleepy"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:background="?android:attr/selectableItemBackground"
-            android:text="Сонливость"
-            android:textAllCaps="false"
-            android:textSize="10pt"
-            android:letterSpacing="-0.0005"
-            app:fontFamily="@font/pt_sans_bold" />
-
-
-        <Button
-            android:id="@+id/buttonStress"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:background="?android:attr/selectableItemBackground"
-            android:text="Стресс"
-            android:textAllCaps="false"
-            android:textSize="10pt"
-            android:letterSpacing="-0.0005"
-            app:fontFamily="@font/pt_sans_bold" />
-
-        <Button
-            android:id="@+id/buttonAngry"
-            android:layout_width="300dp"
-            android:layout_height="wrap_content"
-            android:background="?android:attr/selectableItemBackground"
-            android:letterSpacing="-0.0005"
-            android:text="Гнев"
+            android:text="Назад"
             android:textAllCaps="false"
             android:textSize="10pt"
             app:fontFamily="@font/pt_sans_bold" />

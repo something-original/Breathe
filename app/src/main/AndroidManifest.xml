@@ -10,6 +10,23 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Breathe">
         <activity
+            android:name=".Angry"
+            android:exported="false" />
+        <activity
+            android:name=".Stressed"
+            android:exported="false" />
+        <activity
+            android:name=".Sleepy"
+            android:exported="false" />
+        <activity
+            android:name=".Worried"
+            android:exported="false" />
+        <activity
+            android:name=".PanicAttack"
+            android:exported="false"
+            android:label="@string/title_activity_panic_attack"
+            android:theme="@style/Theme.Breathe.NoActionBar" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

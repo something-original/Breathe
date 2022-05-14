@@ -1,8 +1,14 @@
-package com.example.breathe
+package logic
+
+import android.content.Intent
+import androidx.appcompat.app.AppCompatActivity
+import android.os.Bundle
+import android.widget.Button
 
 import android.os.SystemClock
 
-    val panicAttack = listOf(
+class LogicBreathe {
+    private val panicAttack = listOf(
         Pair("resNose", 4), Pair("expNose", 4),
         Pair("resNose", 4), Pair("expNose", 4),
         Pair("resNose", 6), Pair("expNose", 6),
@@ -10,14 +16,14 @@ import android.os.SystemClock
         Pair("resNose", 6), Pair("expNose", 6),
         Pair("resNose", 6), Pair("expNose", 6)
     )
-    val worried = listOf(
+    private val worried = listOf(
         Pair("resNose", 4), Pair("expLip", 4),
         Pair("resNose", 4), Pair("expLip", 4),
         Pair("resNose", 4), Pair("expLip", 4),
         Pair("resNose", 4), Pair("expLip", 4),
         Pair("resNose", 4), Pair("expLip", 4)
     )
-    val sleepy = listOf(
+    private val sleepy = listOf(
         Pair("resNose", 2), Pair("expStark", 1),
         Pair("resNose", 2), Pair("expStark", 1),
         Pair("resNose", 2), Pair("expStark", 1),
@@ -25,7 +31,7 @@ import android.os.SystemClock
         Pair("resNose", 2), Pair("expStark", 1),
         Pair("resNose", 2), Pair("expStark", 1)
     )
-    val stress = listOf(
+    private val stress = listOf(
         Pair("resStrain", 3), Pair("expRelax", 3),
         Pair("resStrain", 3), Pair("expRelax", 3),
         Pair("resStrain", 3), Pair("expRelax", 3),
@@ -34,7 +40,7 @@ import android.os.SystemClock
         Pair("resStrain", 3), Pair("expRelax", 3),
     )
 
-    val emotionMap = mapOf(
+    private val emotionMap = mapOf(
         "panicAttack" to panicAttack,
         "worried" to worried,
         "sleepy" to sleepy,
@@ -49,23 +55,25 @@ import android.os.SystemClock
         "expRelax" to "Выдохните и расслабтесь"
     )
 
-fun printText(emotion: String): Unit {
+    fun printText(emotion: String): Unit {
 
-    //переход на другой layout
+        //переход на другой layout
 
-    val motions = emotionMap[emotion]!!
-    for (pair in motions) {
-        //вывод текста text[pair.first]!!
+        val motions = emotionMap[emotion]!!
+        for (pair in motions) {
+            //вывод текста text[pair.first]!!
 
-        val delay = (pair.second * 1000).toLong()
-        SystemClock.sleep(delay)
+            val delay = (pair.second * 1000).toLong()
+            SystemClock.sleep(delay)
+        }
+        stop()
+
     }
-    stop()
 
+    private fun stop(): Unit {
+        //псевдонажатие на конпку СТОП и возврат на слой с выором эмоции
+    }
 }
 
-fun stop(): Unit {
-    //псевдонажатие на конпку СТОП и возврат на слой с выором эмоции
-}
 
 
