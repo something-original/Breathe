@@ -45,7 +45,7 @@ private val panicAttack = listOf(
         "stress" to stress
     )
     val text = mapOf(
-        "resNote" to "Вдохните через нос",
+        "resNose" to "Вдохните через нос",
         "expNose" to "Выдохните через нос",
         "expLip" to "Выдохните через рот",
         "expStark" to "Резко выдохните",
@@ -61,13 +61,10 @@ private val panicAttack = listOf(
             val delay = (pair.second * 1000).toLong()
             SystemClock.sleep(delay)
         }
-        stop()
-
+        text1.setText("")
     }
 
-    private fun stop(): Unit {
-        //псевдонажатие на конпку СТОП и возврат на слой с выором эмоции
-    }
+
 
 
 
